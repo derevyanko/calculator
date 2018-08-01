@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Калькулятор онлайн</title>
+        <meta charset='utf-8'>
+        <style type='text/css'>
+            div{
+                border: 2px solid blue;
+                background-color: darkseagreen;
+                margin : 10px;
+                padding: 3px;
+                width: 172px;
+            }
+            input[name = 'entry_field']{
+                width : 168px; 
+                font-size : 17px;
+                text-align: right;
+            }
+            input[type='button']{
+                height: 40px;
+                width: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <form name='calc'>
+                <input type='text' name='entry_field'><br>
+                <hr>
+                <input type='button' value=1 onclick="calc.entry_field.value += '1'">
+                <input type='button' value=2 onclick="calc.entry_field.value += '2'">
+                <input type='button' value=3 onclick="calc.entry_field.value += '3'">
+                <input type='button' value=+ onclick="calc.entry_field.value += '+'">
+                <input type='button' value=4 onclick="calc.entry_field.value += '4'">
+                <input type='button' value=5 onclick="calc.entry_field.value += '5'">
+                <input type='button' value=6 onclick="calc.entry_field.value += '6'">
+                <input type='button' value=- onclick="calc.entry_field.value += '-'">
+                <input type='button' value=7 onclick="calc.entry_field.value += '7'">
+                <input type='button' value=8 onclick="calc.entry_field.value += '8'">
+                <input type='button' value=9 onclick="calc.entry_field.value += '9'">
+                <input type='button' value=* onclick="calc.entry_field.value += '*'">
+                <input type='button' value=0 onclick="calc.entry_field.value += '0'">
+                <input type='button' value=C onclick="calc.entry_field.value = ''">
+                <input type='button' value== onclick="calc.entry_field.value = eval(calc.entry_field.value)">
+                <input type='button' value=/ onclick="calc.entry_field.value += '/'">
+            </form>
+        </div>
+    </body>
+</html>
