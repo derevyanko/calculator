@@ -1,1 +1,3 @@
-# Derevyanko Oleg )
+Calculator on HTML
+
+Derevianko Oleg
